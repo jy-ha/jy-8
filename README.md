@@ -4,7 +4,7 @@
 
 ![bb8](bb8.png)
 
-ATMega128A MCU에서 다양한 Sensor, Actuator 를 다루기 위해 Atmel Studio 환경에서 짜여진 코드입니다.
+ATMega128A MCU에서 다양한 Sensor, Actuator 를 다루기 위해 Atmel Studio 환경에서 짜여진 코드입니다.   
 ATiny와 같은 작은 메모리의 AVR MCU에서는 구동되지 않습니다.
 
 <h2>Project details</h2>
@@ -52,20 +52,20 @@ ATiny와 같은 작은 메모리의 AVR MCU에서는 구동되지 않습니다.
 <h2>Class Structure</h2>
 
 ```class structure
-CFlowManager		비동기적으로 입력되는 명령들을 Event Queue로 처리합니다.
-CDCController		DC motor를 제어합니다.
-CServoController	Servo motor를 제어합니다.
-CSoundController	Speaker, Buzzer를 제어합니다.
+CFlowManager        비동기적으로 입력되는 명령들을 Event Queue로 처리합니다.
+CDCController       DC motor를 제어합니다.
+CServoController    Servo motor를 제어합니다.
+CSoundController    Speaker, Buzzer를 제어합니다.
 
 CCarMovement        2개 DC motor를 변수로 갖고 전진/후진/회전을 처리합니다.
 CArmMovement        4개의 Servo motor를 변수로 갖고 로봇팔 기능을 수행합니다.
 CEtcMovement        1개의 Servo motor를 변수로 갖고 기타 움직임을 처리합니다.
 
-CPerception			아래의 Sensor들을 멤버 변수로 갖고 제어합니다.
+CPerception         아래의 Sensor들을 멤버 변수로 갖고 제어합니다.
 CSensorBase         각종 Sensor에 공통적으로 쓰이는 기능을 가집니다. 
-┣━ CMPU6050	        MPU6050 Acc&Gyro sensor를 제어합니다.
-┣━ CHCSR04		    HCSR04 supersonic sensor를 제어합니다.
-┗━ CSimpleADC	    ADC를 사용하는 기타 sensor를 제어합니다.
+┣━ CMPU6050         MPU6050 Acc&Gyro sensor를 제어합니다.
+┣━ CHCSR04          HCSR04 supersonic sensor를 제어합니다.
+┗━ CSimpleADC       ADC를 사용하는 기타 sensor를 제어합니다.
 ```
 
 <h2>Customization</h2>
