@@ -7,9 +7,9 @@
 
 
 #include "define.h"
-#include "CarMovement.h"
-#include "ArmMovement.h"
-#include "EtcMovement.h"
+#include "Movement/CarMovement.h"
+#include "Movement/ArmMovement.h"
+#include "Movement/EtcMovement.h"
 
 SGolbalEvent		GlobalEventQueue[MAX_EVENTQUEUE];
 uint8_t				GlobalEventNum = 0;

@@ -52,12 +52,12 @@
 #include "Sensors/HC_SR04.h"
 #include "Sensors/SimpleADC.h"
 
-#include "DefinedEvents.h"
-#include "FlowManager.h"
+#include "Core/DefinedEvents.h"
+#include "Core/FlowManager.h"
 #include "Controller/SoundController.h"
 #include "Controller/DCController.h"
 #include "Controller/ServoController.h"
-#include "Perception.h"
+#include "Core/Perception.h"
 
 extern uint8_t				pwmMaskPortb;
 extern uint8_t				pwmMaskPortc;
